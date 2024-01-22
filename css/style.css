@@ -1,0 +1,391 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffffff;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    height: 20vh;
+    display: flex;
+    border: solid #52a800;
+}
+
+.logo{
+    width: 10vw;
+    height: 20vh;
+    margin-left: 50px;
+    padding: 10px;
+    
+}
+.nav{
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: poppins;
+    
+    
+    
+}
+
+li{
+    padding-top: 20px;
+    
+    
+}
+
+ul{
+list-style-type: none;
+display: flex;
+    justify-content: center;
+    position: absolute;
+    
+}
+
+
+.nav-item{
+    
+    padding: 50px;
+    
+    
+}
+
+.nav-link{
+    color: #52a800;
+    
+}
+.searchbar{
+    height: 5vh;
+    place-self: center;
+    border:solid #52a800 ;
+    text-align: center;
+    
+    
+    
+}
+button{
+    color: #fff;
+    background-color:#52a800;
+    height: 5vh;
+    place-self: center;
+    width: 5vw;
+    border: solid #52a800;
+    border-left: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.2rem;
+    color: white;
+
+
+}
+h1{
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: poppins;
+    
+}
+.quote{
+    color: #ffffff;
+    margin-top: 20px;
+    font-family: poppins;
+    background-color: #52a800;
+    height: 10vh;
+    width: 80vw;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 60px;
+}
+.container{
+    
+    border: solid #52a800;
+    border-bottom: solid #52a800;
+    background-image: url(/img/1600w-0Mp0WYk6_8E.webp);
+   background-repeat: no-repeat;
+   background-size:cover;
+   padding: 10px;
+   height: 100vh;
+   
+   text-align: center;
+   font-family: sans-serif;
+   
+}
+.image-gallery{
+    display: flex;
+    flex-wrap:wrap;
+  justify-content:center;
+  gap: 20px;
+  
+}
+.image-gallery > li {
+    flex-basis: 450px;
+    position: relative;
+    margin-bottom: 200px;
+    
+    
+    
+}
+
+
+    .image-gallery li img {
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+        vertical-align:middle;
+      margin-top: 50px;
+       border-radius: 5px;
+      }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background: #52a800;
+  font-family: poppins;
+  margin-top: 50px;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.image-gallery li:hover .overlay {
+    transform: scale(1);
+  }
+
+footer{
+    height: 50vh;
+    background-image: url(/img/24.climate-change-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.kontakt-data{
+    background-color: white;
+    padding: 10px;
+    width: 100vw;
+    }
+.kontakt-heading{
+    font-size: clamp(26px, 3vw, 40px);
+
+}
+.kontakt-text{
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+.kontakt-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.kontakt-input{
+font-family: "poppins";
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid black;
+font-size: 16px;
+border-radius: 5px;
+outline: none;
+
+}
+.logos{
+    background-image: url(/img/Greenleaf\ poster\ logos.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 20vh;
+    width: 20vw;
+}
+.poster{
+    background-image: url(/img/24.climate-change-5.jpg);
+    border: solid #52a800;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+p{
+    padding: 10px;
+    color: #ffffff;
+    font-family: poppins;
+}
+
+h2{
+    font-family: poppins;
+    color: #52a800;
+    margin-left: 10px;
+    
+}
+h3{
+    font-family: poppins;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 30px;
+}
+h5{
+    color: #52a800;
+    font-family: poppins;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 15px;
+}
+.email-input{
+width: 30%;
+height: 5vh;
+border: solid #52a800;
+margin-left: 10px;
+
+}
+.contactbutton{
+    width: 10%;
+    height: 5vh;
+    background-color: #52a800;
+    color: #fff;
+    border: none;
+}
+.email-form{
+    width: 50%;
+    
+    
+    
+}
+
+.newsletter{
+    margin-top: 50px;
+}
+.about{
+    background-color: #52a800;
+}
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        font-size: 10px;
+        margin-top: 10px;
+        
+    }
+
+    .image-gallery > li {
+        flex-basis: 48%;
+    }
+    .quote{
+        display: none;
+        
+    }
+    .container{
+        height: 2000px;
+        border: none;
+        border-top: solid #52a800;
+    }
+    .image-gallery{
+        
+        flex-direction: column;
+        margin-right: 50px;
+    }
+    .overlay{
+        transform: scale(1);
+        
+    }
+    .logo{
+        
+        height: 30vh;
+        width: 50vw;
+    }
+    header{
+        height: 250px;
+        border: none;
+        border-bottom: solid #52a800;
+        background-image: url(/img/1600w-0Mp0WYk6_8E.webp);
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-item {
+        margin: 0 20px;
+    }
+
+    .image-gallery > li {
+        flex-basis: 30%;
+    }
+    .quote{
+        
+        font-size: 30px;
+    }
+}
+
+.menu-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 15px;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+  }
+  
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 37vh;
+    width: 50px;
+    place-content: center;
+    
+  }
+  
+  .menu a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: poppins;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: transparent;
+    width: 50vw;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-btn {
+      display:none;
+      
+    }
+  
+    .menu {
+      display: flex;
+      margin-left: 70px;
+    }
+  }
+
+
+
+
+
+
